@@ -132,7 +132,7 @@ __get_condition_symbol() {
 	local sunrise="$2"
 	local sunset="$3"
 	case "$condition" in
-		"sunny" | "hot")
+		"sunny" | "mostly sunny" | "hot")
 			hourmin=$(date +%H%M)
 			if [ "$hourmin" -ge "$sunset" -o "$hourmin" -le "$sunrise" ]; then
 				#echo "☽"
