@@ -2,6 +2,7 @@
 get_tmux_cwd() {
 	local env_name=$(tmux display -p "TMUXPWD_#D" | tr -d %)
 	local env_val=$(tmux show-environment | grep --color=never "$env_name")
+  echo "$env_val"
 	# The version below is still quite new for tmux. Uncomment this in the future :-)
 	#local env_val=$(tmux show-environment "$env_name" 2>&1)
 

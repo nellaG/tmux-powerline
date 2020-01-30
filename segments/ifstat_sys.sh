@@ -2,7 +2,7 @@
 # Originally stolen from http://unix.stackexchange.com/questions/41346/upload-download-speed-in-tmux-status-line
 
 run_segment() {
-	sleeptime="0.5"
+	sleeptime="5"
 	if shell_is_osx; then
 		iface="en0"
 		type="⎆" # "☫" for wlan
